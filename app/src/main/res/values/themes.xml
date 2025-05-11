@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="Base.Theme.BlogApp" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Couleurs primaires / secondaires -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/tertiary</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorOnSecondary">@color/primary</item>
+
+        <!-- Fond d’écran (gris clair) -->
+        <item name="android:windowBackground">@color/secondary</item>
+
+        <!-- Surface des composants (cartes, modals, etc.) -->
+        <item name="colorSurface">@color/tertiary</item>
+        <item name="colorOnSurface">@color/primary</item>
+    </style>
+
+    <!-- Theme final, hérite de la base -->
+    <style name="Theme.BlogApp" parent="Base.Theme.BlogApp" />
+
+    <!-- TextAppearance Styles pour une typographie cohérente -->
+    <style name="TextAppearance.BlogApp.Title1">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.BlogApp.Title2">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.BlogApp.Title3">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.BlogApp.Title4">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.BlogApp.Body">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="TextAppearance.BlogApp.Caption">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!-- Style générique fallback si besoin -->
+    <style name="TextAppearance.BlogApp" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+
+</resources>
